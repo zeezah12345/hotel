@@ -169,6 +169,7 @@ body{
     flex: 0 0 25%;
     flex-direction: column;
     justify-content: space-between;
+    display: flex;
     
 }
 .side-nav{
@@ -189,7 +190,8 @@ body{
     display: block;
     padding: 1.5rem 3rem;
     
-}n
+}
+
 .user-nav__item{
     width: 1.75rem;
     height: 1.75rem;
@@ -199,4 +201,82 @@ body{
 .hotel-view{
     background-color: #fff;
     flex: 1; 
+}
+.gallery{
+    display: flex;
+
+}
+.gallery__photo{
+    width: 100%;
+    display: block;
+}
+
+.over-view{
+    display: flex;
+    align-items: center;
+    border-bottom: var(--line);
+    
+}
+.over-view__heading{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+
+}
+
+.over-view__stars{
+    margin-right: auto;
+    display: flex;
+    
+}
+.over-view__icon-stars,
+.over-view__icon-location{
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+}
+.over-view__location{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.over-view__icon-location{
+    margin-right: 0.5rem;
+}
+
+.btn-inline{
+    font-size: inherit;
+    color: var(--color-primary);
+    border: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom:5px;
+    display: inline-block;   
+    background-color:transparent;
+    cursor: pointer;
+    
+}
+
+.over-view__rating{
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0 2.25rem;
+    margin-left: 3rem;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.over-view__rating-average{
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px;
+}
+
+.over-view__rating-count{
+    font-size: 0.8rem;
+    text-transform: uppercase;
 }
